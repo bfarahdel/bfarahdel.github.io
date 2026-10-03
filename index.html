@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Britny Farahdel | 🤓</title>
+  <meta name="description"
+    content="Britny Farahdel — engineer, researcher, educator, and creative tech maker in Shanghai. Explore AR experiments, games, robotics, and research." />
+  <meta name="author" content="Britny Farahdel" />
+  <link rel="icon" href="assets/images/icons/favicon-portrait-short-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="assets/images/icons/favicon-portrait-short-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="assets/images/icons/favicon-portrait-short-180.png" sizes="180x180" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Britny Farahdel home"><span class="pixel-logo" aria-hidden="true">B.</span><span>Britny<span class="logo-extension">.html</span></span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#about">Player info</a><a href="#projects">Quest log</a><a href="#research">Research</a><a href="#experience">Journey</a><a href="#contact" class="nav-contact">Say hello ↗</a>
+      </nav>
+      <div class="nav-actions"><button id="theme-toggle" aria-label="Switch to night mode" title="Switch color theme">☾</button><button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">☰</button></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="hero" aria-labelledby="hero-title">
+      <div class="desktop-status"><span><span class="status-dot"></span> WELCOME TO BRITNY'S CORNER OF THE INTERNET</span></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="eyebrow">PLAYER 00 HAS ENTERED THE CHAT</p>
+          <h1 id="hero-title">Hi, I'm Britny<span class="hero-star" aria-hidden="true">✦</span><br><span>Farahdel.</span></h1>
+          <p class="hero-role">Engineer. Maker. 🤓</p>
+          <p class="hero-subtitle">I build playful tech — AR experiments, little games,<br>and robots with a bit of personality. Currently in<br>Shanghai, tinkering with things and learning Chinese.</p>
+          <div class="hero-cta"><a href="#projects" class="btn btn-primary"><span aria-hidden="true">▶</span> Explore my projects</a><a href="#about" class="text-link">Meet the player ↓</a></div>
+          <div class="hero-footnote"><span aria-hidden="true">♥ ♥ ♥</span> Powered by creativity.</div>
+        </div>
+        <div class="world-window">
+          <div class="window-bar"><span><span aria-hidden="true">▣</span> britny_world.exe</span><span aria-hidden="true">− □ ×</span></div>
+          <div class="pixel-world">
+            <img class="landscape bund-scene" src="assets/images/backgrounds/shanghai-bund.svg" alt="" aria-hidden="true" />
+            <div class="world-label">coding...🤓</div>
+            <button class="world-companion" id="companion-button" aria-label="Say hello to my pixel companion"><span class="sprite" aria-hidden="true"></span></button>
+            <div class="companion-message" id="companion-message" role="status">SpideyCam: web-slinging, but make it AR.</div>
+            <span class="world-coordinate">HOME BASE · SHANGHAI</span>
+          </div>
+          <div class="world-footer"><span><span class="status-dot"></span> CURIOSITY: MAX LEVEL</span><button id="motion-toggle" aria-pressed="false">Pause animation Ⅱ</button></div>
+        </div>
+      </div>
+      <div class="achievement-strip" aria-label="Career highlights"><div><span class="achievement-icon">★</span><p><strong>3× first place</strong><span>Hackathons & design</span></p></div><div><span class="achievement-icon">▤</span><p><strong>IEEE published</strong><span>Brains, data & discoveries</span></p></div><div><span class="achievement-icon">⌘</span><p><strong>Code with purpose</strong><span>Health, science & education</span></p></div><a href="#skills">Open inventory <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Meet the <span class="gradient-text">player.</span></h2>
+          <p class="section-subtitle">An engineer, researcher, and educator with a soft spot for playful builds and pop-culture mashups.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-card">
+            <div class="about-icon" aria-hidden="true">▣</div>
+            <h3>Background & Engineering</h3>
+            <p>With an <strong>MS in Computer Science</strong> (Georgia State) and a <strong>BS in Biomedical Engineering</strong> (Georgia Tech), I love using software to solve real-world problems—whether that’s analyzing health data or building clean, user-focused web apps.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-icon" aria-hidden="true">✧</div>
+            <h3>Research & Data Science</h3>
+            <p>My research focuses on neuroimaging at the TReNDS Center (published in <strong>IEEE EMBC</strong>) and genomics quality control tools for Memorial Sloan Kettering. I enjoy translating complex medical datasets into actionable insights and tools.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-icon" aria-hidden="true">✦</div>
+            <h3>Creative Tech & Making</h3>
+            <p>Lately, I’ve been making AR web-shooters, a robot with a beating heart, and a cat-versus-mouse fighting game. I like mixing real engineering with a little pop-culture chaos — and sharing the process, not just the finished thing.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-icon" aria-hidden="true">◎</div>
+            <h3>Learning & Life in Shanghai</h3>
+            <p>After teaching mathematics in Guangzhou, I’m now studying Chinese at East China Normal University in Shanghai. Off-screen side quests include poetry, filmmaking, and reading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects & Awards Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">The <span class="gradient-text">quest log.</span></h2>
+          <p class="section-subtitle">Fresh from the workbench: playful experiments first, followed by my research, education, and award-winning builds.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar" id="project-filters">
+          <button class="filter-btn active" aria-pressed="true" data-filter="all">All Projects</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="recent">✦ Recent Maker Builds</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="award">🥇 1st Place Awards</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="elearning">📚 E-Learning & EdTech</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="software">💻 Software & Web</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="research">🔬 Research & Health</button>
+        </div>
+
+        <p id="project-count" class="filter-count" role="status">11 projects in the quest log</p>
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <article class="glass-card project-card recent-project" data-category="recent software">
+            <div class="project-badge">✦ Recent build · Game development</div>
+            <h3 class="project-title">Kitty Kat vs. Mister Mouse</h3>
+            <p class="project-issuer">Gameplay revealed · September 2026</p>
+            <p class="project-desc">An orange tabby in a dino onesie takes on a sassy gray mouse. A 2D fighting game with kawaii doodle art, flying fish, perfectly timed deflects, and a REX tail-whip special. Cute world. Chaotic cat fight.</p>
+            <div class="project-tags"><span class="tag">2D Fighting Game</span></div>
+            <div class="project-footer"><a href="https://github.com/bfarahdel/kitty-kat-vs-mister-mouse" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository ↗</a></div>
+          </article>
+
+          <article class="glass-card project-card recent-project" data-category="recent software">
+            <div class="project-badge">✦ Recent build · Augmented reality</div>
+            <h3 class="project-title">RattleLens</h3>
+            <p class="project-issuer">AR Snake · Taken for a spin at the Shanghai Bund</p>
+            <p class="project-desc">Snake, with a change of scenery. I built an AR Snake game and brought it to the Bund, turning a Shanghai sunset into the backdrop for a playful coding experiment.</p>
+            <div class="project-tags"><span class="tag">Augmented Reality</span><span class="tag">Snake Game</span></div>
+            <div class="project-footer"><a href="https://github.com/bfarahdel/RattleLens" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository ↗</a></div>
+          </article>
+
+          <article class="glass-card project-card recent-project" data-category="recent software">
+            <div class="project-badge">✦ Recent build</div>
+            <h3 class="project-title">SpideyCam</h3>
+            <p class="project-issuer">AR web-shooter · Personal maker project</p>
+            <p class="project-desc">A Spider-Man-inspired AR web-shooter app. I made it, then tested it on Spider-Man, Mario, and Minecraft — because apparently no fictional universe was safe from my web-slinging experiment.</p>
+            <div class="project-tags"><span class="tag">Augmented Reality</span><span class="tag">Software</span></div>
+            <div class="project-footer"><a href="https://github.com/bfarahdel/SpideyCam" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository ↗</a></div>
+          </article>
+
+          <article class="glass-card project-card recent-project" data-category="recent elearning">
+            <div class="project-badge">✦ Recent build · Hardware & robotics</div>
+            <h3 class="project-title">A Robot with a Beating Heart</h3>
+            <p class="project-issuer">micro:bit · Personal maker project</p>
+            <p class="project-desc">A little hardware experiment with a lot of heart. I gave my robot a beating heart using micro:bit, bringing together robotics, creative tinkering, and playful STEM learning.</p>
+            <div class="project-tags"><span class="tag">micro:bit</span><span class="tag">Robotics</span><span class="tag">STEM</span></div>
+            <div class="project-footer"><span class="status-badge">✦ Personal maker project</span></div>
+          </article>
+
+
+          <!-- Project 1: ATL Guardian -->
+          <article class="glass-card project-card" data-category="award software">
+            <div class="project-badge award-badge">
+              🥇1st Place — Render 2024 InnovateATL
+            </div>
+            <h3 class="project-title">ATL Guardian</h3>
+            <p class="project-issuer">Issued by Render 2024 InnovateATL Hackathon Powered by New Relic • Jun 2024</p>
+            <p class="project-desc">
+              Enhances road safety and urban mobility through intelligent monitoring and data analytics utilizing
+              computer vision to monitor traffic flow, pedestrians, and detect vehicle collisions in real time.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Python</span>
+              <span class="tag">Data Analytics</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/sameerdewan/atl-guardian" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg> View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Housing Price Prediction Web App -->
+          <article class="glass-card project-card" data-category="award software">
+            <div class="project-badge award-badge">
+              🥇1st Place — MLH Kaggle Competition
+            </div>
+            <h3 class="project-title">ML Housing Price Prediction App</h3>
+            <p class="project-issuer">Issued by Major League Hacking (Local Hack Day Build) • Jan 2022</p>
+            <p class="project-desc">
+              Ranked 1st place in the Kaggle competition hosted by Major League Hacking. Built an interactive machine
+              learning web application to predict housing prices based on multi-variate features and real estate trends.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Kaggle</span>
+              <span class="tag">Python</span>
+              <span class="tag">Web App</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/bfarahdel/housing-price-web-app" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg> View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Interactive E-Learning Math Materials -->
+          <article class="glass-card project-card" data-category="elearning software">
+            <div class="project-badge info-badge">
+              <span class="pixel-icon" aria-hidden="true">▤</span> E-Learning & EdTech
+            </div>
+            <h3 class="project-title">Interactive E-Learning Math Materials</h3>
+            <p class="project-issuer">Open Source Educational Projects • github.com/bfarahdel/math-materials</p>
+            <p class="project-desc">
+              Designed and developed interactive web-based e-learning materials covering Algebra, Geometry, and
+              Trigonometric Compound Angles to make secondary mathematics visual, intuitive, and engaging.
+            </p>
+            <div class="project-tags">
+              <span class="tag">E-Learning</span>
+              <span class="tag">EdTech</span>
+              
+              <span class="tag">Web Dev</span>
+              <span class="tag">Curriculum Design</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/bfarahdel/math-materials" target="_blank" rel="noopener noreferrer"
+                class="btn btn-sm btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg> View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: COVID-19 Prone Support System -->
+          <article class="glass-card project-card" data-category="award research">
+            <div class="project-badge award-badge">
+              🥇1st Place — Engineering World Health
+            </div>
+            <h3 class="project-title">COVID-19 Prone Support System</h3>
+            <p class="project-issuer">Issued by Engineering World Health • Aug 2020</p>
+            <p class="project-desc">
+              Developed a 3D model prototype of a specialized biomedical device providing respiratory and physical
+              support for COVID-19 associated Acute Respiratory Distress Syndrome (ARDS) patients placed in a prone
+              position.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Biomedical Device</span>
+              <span class="tag">3D CAD Modeling</span>
+              
+            </div>
+            <div class="project-footer">
+              <span class="status-badge"><span class="pixel-icon" aria-hidden="true">▪</span> Design Award Winner</span>
+            </div>
+          </article>
+
+          <!-- Project 5: MSKCC Bioinformatics QC Platform -->
+          <article class="glass-card project-card" data-category="software research">
+            <div class="project-badge info-badge">
+              <span class="pixel-icon" aria-hidden="true">▪</span> MLH Software Engineering Fellowship
+            </div>
+            <h3 class="project-title">MSKCC Bioinformatics QC & Analytics Engine</h3>
+            <p class="project-issuer">Memorial Sloan Kettering Cancer Center • 2022–2023</p>
+            <p class="project-desc">
+              Developed the first pipeline-agnostic software tool to process quality control metrics from multiple
+              bioinformatics pipelines. Built a full-stack data analytics application from scratch to accelerate cancer
+              genomics research.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Bioinformatics</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">Data Analytics</span>
+              
+            </div>
+            <div class="project-footer">
+              <span class="status-badge"><span class="pixel-icon" aria-hidden="true">▪</span> Cancer Genomics</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Combat Athlete Biometric Tracker -->
+          <article class="glass-card project-card" data-category="research software">
+            <div class="project-badge info-badge">
+              <span class="pixel-icon" aria-hidden="true">▪</span> Georgia Tech BME Capstone
+            </div>
+            <h3 class="project-title">Combat Athlete Biometric Fitness Tracker</h3>
+            <p class="project-issuer">Advancing Technologies & Georgia Tech • Aug – Dec 2017</p>
+            <p class="project-desc">
+              Designed and engineered a specialized wearable biomedical hardware and software system to record, acquire,
+              and analyze biometric physical data for combat sports athletes.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Biomedical Device</span>
+              <span class="tag">Sensor Data</span>
+              <span class="tag">Hardware/Software</span>
+            </div>
+            <div class="project-footer">
+              <a class="status-badge inline-patent-link" href="#patent"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 .5l3-3a5 5 0 0 0-7-7l-2 2"/><path d="M14 11a5 5 0 0 0-7-.5l-3 3a5 5 0 0 0 7 7l2-2"/></svg> Patented</a>
+            </div>
+          </article>
+
+          <!-- Project 7: Emory Neurological Data Acquisition -->
+          <article class="glass-card project-card" data-category="research">
+            <div class="project-badge info-badge">
+              <span class="pixel-icon" aria-hidden="true">▪</span> Emory University School of Medicine
+            </div>
+            <h3 class="project-title">Neurological Data Acquisition System</h3>
+            <p class="project-issuer">Emory University Research Lab • Aug – Dec 2017</p>
+            <p class="project-desc">
+              Engineered a customized data acquisition system using LabVIEW to capture and process high-precision neurological data
+              for medical research experiments.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Neuroscience</span>
+              <span class="tag">Data Acquisition</span>
+              <span class="tag">LabVIEW</span>
+            </div>
+            <div class="project-footer">
+              <span class="status-badge"><span class="pixel-icon" aria-hidden="true">⌕</span> Medical Research</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Publications Section -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Down the <span class="gradient-text">rabbit hole.</span></h2>
+          <p class="section-subtitle">Patented wearable technology and academic research in neuroimaging, machine learning, and health data analytics.
+          </p>
+        </div>
+
+        <div class="publications-list">
+
+          <article class="glass-card pub-card patent-card" id="patent">
+            <div class="pub-year">2023</div>
+            <div class="pub-content">
+              <div class="pub-venue">✦ INVENTION UNLOCKED · U.S. Patent</div>
+              <h3 class="pub-title">Wearable device utilizing flexible electronics</h3>
+              <p class="pub-authors"><strong>Britny Farahdel</strong> · Named co-inventor</p>
+              <p class="pub-abstract">A flexible wearable that combines biometric and motion sensors with wireless data transmission to help analyze athletic performance, fatigue, and injury risk.</p>
+              <p class="patent-details">US 11,832,971 B2 · Granted December 5, 2023</p>
+              <div class="pub-tags"><span class="tag">Wearable Technology</span><span class="tag">Flexible Electronics</span><span class="tag">Biometric Sensors</span></div>
+              <div class="project-footer"><a class="btn btn-sm btn-outline" href="https://patents.google.com/patent/US11832971B2/en" target="_blank" rel="noopener noreferrer">View Patent ↗</a></div>
+            </div>
+          </article>
+          <!-- Publication 1 -->
+          <div class="glass-card pub-card">
+            <div class="pub-year">2024</div>
+            <div class="pub-content">
+              <div class="pub-venue">IEEE EMBC 2024</div>
+              <h3 class="pub-title">Brain Community Detection in the General Children Population</h3>
+              <p class="pub-authors"><strong>Britny Farahdel</strong>, et al.</p>
+              <p class="pub-abstract">
+                Investigated functional brain organization and community detection patterns across the Adolescent Brain
+                Cognitive Development (ABCD) study dataset using advanced graph theory and data mining techniques.
+              </p>
+              <div class="pub-tags">
+                <span class="tag">Neuroimaging</span>
+                <span class="tag">Graph Mining</span>
+                <span class="tag">ABCD Cohort</span>
+                <span class="tag">IEEE EMBC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Publication 2 -->
+          <div class="glass-card pub-card">
+            <div class="pub-year">2021</div>
+            <div class="pub-content">
+              <div class="pub-venue">IEEE BIBM 2021</div>
+              <h3 class="pub-title">Confirmatory Factor Analysis on Mental Health Status using ABCD Cohort</h3>
+              <p class="pub-authors"><strong>Britny Farahdel</strong>, et al.</p>
+              <p class="pub-abstract">
+                Authored empirical confirmatory factor analysis (CFA) examining psychological metrics and behavioral
+                assessments to model adolescent mental health statuses.
+              </p>
+              <div class="pub-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Factor Analysis</span>
+                <span class="tag">Mental Health</span>
+                <span class="tag">IEEE BIBM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Role Highlight -->
+          <div class="glass-card pub-card research-lab-card">
+            <div class="pub-year">2020 – 2024</div>
+            <div class="pub-content">
+              <div class="pub-venue">GSU TReNDS Center</div>
+              <h3 class="pub-title">Graduate Research Assistant — Center for Translational Research in Neuroimaging and
+                Data Science</h3>
+              <p class="pub-abstract">
+                Implemented machine learning and data mining algorithms on large-scale neuroimaging datasets. Conducted
+                working memory classification, Siamese network brain morphometry analysis, and deep learning for
+                diagnostic imaging.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span class="gradient-text">adventure so far.</span></h2>
+          <p class="section-subtitle">My professional journey across education, software development, research, and
+            community building.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Experience item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> 2025 – 2026</span>
+              <h3 class="timeline-role">Subject Teacher</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Succeed in Education (SIE) & Guangzhou Weiming
+                School • Guangzhou, China</p>
+              <ul class="timeline-list">
+                <li>Delivered comprehensive mathematics instruction for grades G8–G12, managing curriculum encompassing
+                  Algebra 1 & 2, Geometry, and AP Statistics.</li>
+                <li>Empowered international students to bridge language and content gaps across math, humanities, and
+                  economics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> Aug 2024 – July 2025</span>
+              <h3 class="timeline-role">Community Manager and Designer</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Beyond AI Games • Brussels, EU</p>
+              <ul class="timeline-list">
+                <li>Managed an international community of over 1,000 members through active social media engagement and
+                  educational programming.</li>
+                <li>Coordinated educational workshops focused on AI filmmaking and gaming.</li>
+                <li>Designed original game character artwork for an upcoming title.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> 2022 – 2023</span>
+              <h3 class="timeline-role">Software Engineer Fellow</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Major League Hacking & Memorial Sloan Kettering
+                Cancer Center (MSKCC) • New York, USA</p>
+              <ul class="timeline-list">
+                <li>Developed MSKCC's first pipeline-agnostic bioinformatics quality control metrics software tool for
+                  cancer genomics research.</li>
+                <li>Built a full-stack web application from scratch providing real-time data analytics.</li>
+                <li>Participated in weekly agile scrum stand-ups and code reviews.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> 2020 – 2024</span>
+              <h3 class="timeline-role">Graduate Research Assistant</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Center for Translational Research in
+                Neuroimaging and Data Science (TReNDS) • Atlanta, USA</p>
+              <ul class="timeline-list">
+                <li>Applied data mining and machine learning on psychological and neuroimaging data.</li>
+                <li>First-authored IEEE EMBC 2024 and IEEE BIBM 2021 publications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> March – June 2021</span>
+              <h3 class="timeline-role">Computer Science Tutor</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Pandemic Professors • Berkeley, USA</p>
+              <ul class="timeline-list">
+                <li>Instructed introductory Computer Science lessons to students in underserved communities to help
+                  bridge educational gaps during the COVID-19 pandemic.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience item 6 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <span class="timeline-date"><span class="pixel-icon" aria-hidden="true">▪</span> Aug – Dec 2017</span>
+              <h3 class="timeline-role">Undergraduate Research Assistant</h3>
+              <p class="timeline-company"><span class="pixel-icon" aria-hidden="true">▪</span> Emory University School of Medicine • Atlanta,
+                USA</p>
+              <ul class="timeline-list">
+                <li>Developed a specialized system to acquire neurological data for research lab experimentation.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Learning <span class="gradient-text">unlocked.</span></h2>
+          <p class="section-subtitle">Academic foundations in Computer Science and Biomedical Engineering.</p>
+        </div>
+
+        <div class="education-grid">
+          <div class="glass-card edu-card">
+            <div class="edu-icon" aria-hidden="true">文</div>
+            <span class="edu-year">Fall 2026 · Current chapter</span>
+            <h3>Chinese Language Studies</h3>
+            <p class="edu-school">East China Normal University · Shanghai, China</p>
+            <p class="edu-desc">Learning Chinese while making things.</p>
+          </div>
+
+
+          <div class="glass-card edu-card">
+            <div class="edu-icon"><span class="pixel-icon" aria-hidden="true">◆</span></div>
+            <span class="edu-year">2020 – 2024</span>
+            <h3>Master of Science (MS) in Computer Science</h3>
+            <p class="edu-school">Georgia State University • Atlanta, USA</p>
+            <p class="edu-desc">Focus on Machine Learning, Neuroimaging Data Mining, and Deep Learning applications.</p>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-icon"><span class="pixel-icon" aria-hidden="true">⌕</span></div>
+            <span class="edu-year">2012 – 2017</span>
+            <h3>Bachelor of Science (BS) in Biomedical Engineering</h3>
+            <p class="edu-school">Georgia Institute of Technology • Atlanta, USA</p>
+            <p class="edu-desc">Focus on Biometrics, Medical Device Prototyping, and Computational Physiology.</p>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-icon"><span class="pixel-icon" aria-hidden="true">★</span></div>
+            <span class="edu-year">2025</span>
+            <h3>TEFL Certification (120 Hours)</h3>
+            <p class="edu-school">Teaching English as a Foreign Language</p>
+            <p class="edu-desc">International pedagogical training for multi-lingual STEM instruction.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Creative Endeavors Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">The <span class="gradient-text">inventory.</span></h2>
+          <p class="section-subtitle">Technical proficiencies, tools, and creative pursuits.</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <span class="pixel-icon" aria-hidden="true">⌘</span>
+              <h3>Programming & Web</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Python</span>
+              </div>
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">JavaScript (ES6+)</span>
+              </div>
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">HTML5 & CSS3</span>
+              </div>
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Full-Stack Dev</span>
+              </div>
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Git & GitHub</span>
+              </div>
+              <div class="skill-tag tag-purple">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <span class="pixel-icon" aria-hidden="true">▥</span>
+              <h3>Data & Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag tag-cyan">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Machine Learning</span>
+              </div>
+              <div class="skill-tag tag-cyan">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Data Mining</span>
+              </div>
+              <div class="skill-tag tag-cyan">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Computer Vision</span>
+              </div>
+              <div class="skill-tag tag-cyan">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Bioinformatics</span>
+              </div>
+              <div class="skill-tag tag-cyan">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Statistical Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <span class="pixel-icon" aria-hidden="true">▤</span>
+              <h3>E-Learning & EdTech</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag tag-emerald">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Interactive E-Learning</span>
+              </div>
+              <div class="skill-tag tag-emerald">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">EdTech Platform Design</span>
+              </div>
+              <div class="skill-tag tag-emerald">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Digital Math Materials</span>
+              </div>
+              <div class="skill-tag tag-emerald">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">STEM Curriculum Design</span>
+              </div>
+              <div class="skill-tag tag-emerald">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Multimedia Editing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <span class="pixel-icon" aria-hidden="true">♥</span>
+              <h3>Hobbies</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag tag-pink">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Poetry</span>
+              </div>
+              <div class="skill-tag tag-pink">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Filmmaking</span>
+              </div>
+              <div class="skill-tag tag-pink">
+                <span class="skill-icon"><span class="pixel-icon" aria-hidden="true">▪</span></span>
+                <span class="skill-label">Reading</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="glass-card contact-card text-center">
+          <div class="contact-avatar-container">
+            <img src="assets/images/icons/favicon-portrait-short-192.png" alt="BF" class="contact-avatar" width="80" height="80"
+              style="width: 80px; height: 80px; min-width: 80px; min-height: 80px; max-width: 80px; max-height: 80px; border-radius: 50%; object-fit: cover;" />
+          </div>
+          <h2 class="section-title">Have a <span class="gradient-text">side quest?</span></h2>
+          <p class="contact-desc">
+            Explore my builds on GitHub, or start a conversation about creative tech, software, and STEM education.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://github.com/bfarahdel" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg> Explore GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 Britny Farahdel · Pixelated...</p>
+      <div class="footer-socials">
+        <a href="https://github.com/bfarahdel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/rattle-snake.js"></script>
+</body>
+
+</html>
