@@ -351,3 +351,9 @@ body { font-size:17px; line-height:1.75; }
 /* Blue patent link with readable contrast in both themes. */
 .status-badge.inline-patent-link { color:#2455c7; }
 [data-theme=dark] .status-badge.inline-patent-link { color:#8ab4ff; }
+
+/* Keep the introduction comfortably spaced on phones. */
+@media(max-width:520px) {
+ .hero-content h1 { letter-spacing:0; font-size:clamp(17px,5.2vw,21px); line-height:1.8; }
+ .hero-content .hero-subtitle { word-spacing:0.04em; line-height:1.85; }
+}
