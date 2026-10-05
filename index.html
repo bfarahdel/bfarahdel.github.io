@@ -103,16 +103,25 @@
         <!-- Filter Buttons -->
         <div class="filter-bar" id="project-filters">
           <button class="filter-btn active" aria-pressed="true" data-filter="all">All Projects</button>
-          <button class="filter-btn" aria-pressed="false" data-filter="recent">✦ Recent Maker Builds</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="recent">✦ Recent Builds</button>
           <button class="filter-btn" aria-pressed="false" data-filter="award">🥇 1st Place Awards</button>
           <button class="filter-btn" aria-pressed="false" data-filter="elearning">📚 E-Learning & EdTech</button>
           <button class="filter-btn" aria-pressed="false" data-filter="software">💻 Software & Web</button>
           <button class="filter-btn" aria-pressed="false" data-filter="research">🔬 Research & Health</button>
         </div>
 
-        <p id="project-count" class="filter-count" role="status">11 projects in the quest log</p>
+        <p id="project-count" class="filter-count" role="status">12 projects in the quest log</p>
         <!-- Projects Grid -->
         <div class="projects-grid" id="projects-grid">
+          <article class="glass-card project-card recent-project" data-category="recent software elearning">
+            <div class="project-badge">✦ Recent build · Hardware &amp; robotics</div>
+            <h3 class="project-title">BottyBuilder💪</h3>
+            <p class="project-issuer">Gesture-controlled weightlifting robot · Personal maker project</p>
+            <p class="project-desc">A little robot with a workout routine and a lot of personality. As you count from 1 to 8 using Chinese number hand gestures, BottyBuilder lifts weights and changes the emoji on its micro:bit LED screen. Make a heart with both hands, and it shows a heart right back.</p>
+            <div class="project-tags"><span class="tag">Robotics</span><span class="tag">Gesture Recognition</span><span class="tag">micro:bit</span></div>
+            <div class="project-footer"><span class="status-badge">✦ Working project</span></div>
+          </article>
+
           <article class="glass-card project-card recent-project" data-category="recent software">
             <div class="project-badge">✦ Recent build · Game development</div>
             <h3 class="project-title">Kitty Kat vs. Mister Mouse</h3>
@@ -136,7 +145,7 @@
             <h3 class="project-title">SpideyCam</h3>
             <p class="project-issuer">AR web-shooter · Personal maker project</p>
             <p class="project-desc">A Spider-Man-inspired AR web-shooter app. I made it, then tested it on Spider-Man, Mario, and Minecraft — because apparently no fictional universe was safe from my web-slinging experiment.</p>
-            <div class="project-tags"><span class="tag">Augmented Reality</span><span class="tag">Software</span></div>
+            <div class="project-tags"><span class="tag">Augmented Reality</span></div>
             <div class="project-footer"><a href="https://github.com/bfarahdel/SpideyCam" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">View Repository ↗</a></div>
           </article>
 
@@ -145,7 +154,7 @@
             <h3 class="project-title">A Robot with a Beating Heart</h3>
             <p class="project-issuer">micro:bit · Personal maker project</p>
             <p class="project-desc">A little hardware experiment with a lot of heart. I gave my robot a beating heart using micro:bit, bringing together robotics, creative tinkering, and playful STEM learning.</p>
-            <div class="project-tags"><span class="tag">micro:bit</span><span class="tag">Robotics</span><span class="tag">STEM</span></div>
+            <div class="project-tags"><span class="tag">micro:bit</span><span class="tag">Robotics</span></div>
             <div class="project-footer"><span class="status-badge">✦ Personal maker project</span></div>
           </article>
 
@@ -224,8 +233,8 @@
               <span class="tag">E-Learning</span>
               <span class="tag">EdTech</span>
               
-              <span class="tag">Web Dev</span>
-              <span class="tag">Curriculum Design</span>
+              
+              
             </div>
             <div class="project-footer">
               <a href="https://github.com/bfarahdel/math-materials" target="_blank" rel="noopener noreferrer"
@@ -367,7 +376,7 @@
               </p>
               <div class="pub-tags">
                 <span class="tag">Neuroimaging</span>
-                <span class="tag">Graph Mining</span>
+                <span class="tag">Data Mining</span>
                 <span class="tag">ABCD Cohort</span>
                 <span class="tag">IEEE EMBC</span>
               </div>
